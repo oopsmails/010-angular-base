@@ -1,5 +1,5 @@
 {
-  "name": "002-oopsmails-angular-lib-a14",
+  "name": "angular-base",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
