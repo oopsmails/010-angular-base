@@ -1,0 +1,58 @@
+[
+  {
+    "linkText": "Home",
+    "parentLink": "",
+    "menu": false,
+    "submenu": []
+  },
+  {
+    "linkText": "HomeMade",
+    "parentLink": "/home/hello",
+    "menu": false,
+    "submenu": []
+  },
+  {
+    "linkText": "Goto2",
+    "parentLink": "",
+    "menu": false,
+    "submenu": [
+      {
+        "childtext": "Go Home",
+        "link": ""
+      },
+      {
+        "childtext": "Hello Component",
+        "link": "/home/hello"
+      },
+      {
+        "childtext": "Go nowhere",
+        "link": "/nowhere"
+      }
+    ]
+  },
+  {
+    "linkText": "NotFound",
+    "parentLink": "/notfound",
+    "menu": false,
+    "submenu": []
+  },
+  {
+    "linkText": "Goto",
+    "parentLink": "",
+    "menu": false,
+    "submenu": [
+      {
+        "childtext": "Nowhere to go",
+        "link": "/nowhere"
+      },
+      {
+        "childtext": "Test Around",
+        "link": "/home/test-around"
+      },
+      {
+        "childtext": "Go Home",
+        "link": "/home"
+      }
+    ]
+  }
+]
