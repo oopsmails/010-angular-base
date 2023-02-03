@@ -4,8 +4,9 @@ This is a workspace for generating angular projects using different versions.
 
 ```
 
-npx -p @angular/cli@14 ng new 010-angular-base
+npx -p @angular/cli@14 ng new angular-base --skip-install
 
+npx -p @angular/cli@10 ng new angular-base --skip-install
 ```
 
 
