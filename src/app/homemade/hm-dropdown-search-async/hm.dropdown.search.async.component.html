@@ -13,4 +13,24 @@
   <div class="hm-dropdown-search__dropdown-div" *ngIf="showDropdown">
     This is the dropdown content
   </div>
+
+  <!-- <ng-container *ngIf="showItems && displaying$ | async as items">
+    <div class="hm-dropdown-async3__show-items-div">
+      <ng-container *ngIf="items.length > 0">
+        <div class="search-modal__item-list">
+          <a
+            *ngFor="let option of items; let i = index"
+            class="dropdown-item pointer text-contain"
+            [ngClass]="{ alternateBackground: i % 2 == 0 }"
+            (mousedown)="selectValue($event, option); $event.preventDefault()"
+          >
+            {{ option.description }}
+          </a>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="items.length === 0">
+        <div class="text-center text-muted mt-1">Waiting ... or No car found ......</div>
+      </ng-container>
+    </div>
+  </ng-container> -->
 </div>

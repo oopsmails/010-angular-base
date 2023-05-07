@@ -4,14 +4,21 @@
 
 .hm-dropdown-search__input {
   width: 100%;
+  height: 2.5rem;
 }
 
 .hm-dropdown-search__dropdown-div {
   position: absolute;
+  z-index: 5;
   top: 100%;
-  left: 0;
+  // left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #ccc;
   padding: 10px;
+
+  height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
 }
