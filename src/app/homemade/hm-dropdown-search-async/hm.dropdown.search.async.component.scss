@@ -1,0 +1,17 @@
+.hm-dropdown-search__container {
+  position: relative;
+}
+
+.hm-dropdown-search__input {
+  width: 100%;
+}
+
+.hm-dropdown-search__dropdown-div {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}

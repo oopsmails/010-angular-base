@@ -2,21 +2,23 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable, Subject } from 'rxjs';
 import { RandomItem, UsState } from '../shared/models';
+import { SharedDataService } from '../shared/services/shared.data.service';
 
 @Component({
-  selector: 'hello',
-  templateUrl: './hello.component.html',
-  styleUrls: ['./hello.component.scss'],
+  selector: 'home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
 })
-export class HelloComponent implements OnInit, OnDestroy {
+export class HomeComponent implements OnInit, OnDestroy {
   private onDestroy$: Subject<boolean> = new Subject();
   projectDescription: String = 'Testing Angular Lib Sharing';
   randomItems$: Observable<RandomItem[]>;
-  states$: Observable<UsState[]>;
 
-  constructor(private router: Router) {}
+  constructor(private sharedDataService: SharedDataService, private router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.randomItems$ = this.sharedDataService.getRandomItems(10, 500);
+  }
 
   navToPage(page) {
     console.log('HomeComponent, navToPage, page = ' + page);

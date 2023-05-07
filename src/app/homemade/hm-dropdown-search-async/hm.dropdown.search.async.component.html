@@ -1,0 +1,16 @@
+<h3>Hello, Home Made Car Searching Dropdown</h3>
+<hr />
+
+<h4>Developing ...</h4>
+
+<div class="hm-dropdown-search__container">
+  <input
+    class="hm-dropdown-search__input"
+    type="text"
+    (focus)="showDropdown = true"
+    (blur)="showDropdown = false"
+  />
+  <div class="hm-dropdown-search__dropdown-div" *ngIf="showDropdown">
+    This is the dropdown content
+  </div>
+</div>

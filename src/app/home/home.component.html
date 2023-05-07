@@ -1,0 +1,42 @@
+<h1>{{ projectDescription }}</h1>
+
+<hr />
+<h3>Testing Around Pages</h3>
+
+<p><a routerLink="/home">/home: Home</a></p>
+<p><a routerLink="/hm-search">/Home Made Dropdown Search</a></p>
+<p><a routerLink="/hm-search3">/Home Made Dropdown Search 3</a></p>
+
+<hr />
+
+<div style="width: 500px">
+  <app-hm-dropdown-search-async></app-hm-dropdown-search-async>
+</div>
+
+<hr />
+
+<!-- <div>
+  <h3>HomeMadeDropdownSearchAsyncComponent3</h3>
+  <div class="hm__home-hm-search3">
+    <app-hm-dropdown-search-async3></app-hm-dropdown-search-async3>
+  </div>
+</div> -->
+
+<hr />
+
+<ng-container *ngIf="randomItems$ | async as randomItems">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>State</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of randomItems">
+        <td>{{ item.id }}</td>
+        <td><div [innerHtml]="item.name"></div></td>
+      </tr>
+    </tbody>
+  </table>
+</ng-container>
